@@ -9,7 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-
+    width: calc(100% - 10px);
 }
 
 /*_____________________________ general settings _____________________________*/
@@ -48,7 +48,7 @@ nav ul li{
 .logo{
     width: 40px;
     float: right;
-    margin: 0.20% 0;
+    margin: 0.50% 0;
     background-color: green;
 }
 main{
@@ -115,7 +115,37 @@ main{
     padding: 0 9%;
 }
 /*_____________________________ contact section _____________________________*/
-
+.contact-content{
+    padding: 1%;
+    text-align: center;
+    background-color: rgb(189, 143, 105);
+}
+.image-5{
+    width: 65%;
+    height: 65vh;
+    object-fit: cover;
+}
+.text-contact{
+    padding: 2%;
+    background-color: aqua;
+}
+.container-comunicacion{
+    padding: 1px 25%;
+    overflow: auto;
+    background-color: rgb(248, 205, 154);
+}
+.comuncacion{
+    width: 25%;
+    margin: 1%;
+    padding: 0.5% 1%;
+    background-color: red;
+}
+.com-mail{
+    float: left;
+}
+.com-numb{
+    float: right;
+}
 footer{
     padding: 1%;
     text-align: center;
