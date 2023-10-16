@@ -36,3 +36,12 @@ nav ul li{
     margin: 0.20% 0;
     background-color: green;
 }
+main{
+    padding: 0.5% 1%;
+    text-align: center;
+    background-color: rgb(178, 30, 0);
+}
+.text-main{
+    margin: 0.4% 0;
+    background-color: antiquewhite;
+}
