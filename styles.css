@@ -8,8 +8,15 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --background: #F6FFF8;
+    --main: #eaf4f4e3;
+    --second: #CCE3DE;
+    --text: #000000;
+}
 body{
     width: calc(100% - 10px);
+    background-color: var(--background);
 }
 
 /*_____________________________ general settings _____________________________*/
@@ -18,54 +25,71 @@ body{
     font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
-    background-color: rgb(255, 98, 0);
 }
 .gloval-image{
     width: 300px;
+    border-radius: 15px;
+    box-shadow: rgba(17, 17, 26, 0.412) 0px 4px 16px, rgba(17, 17, 26, 0.365) 0px 8px 24px, rgba(17, 17, 26, 0.453) 0px 16px 56px;
 }
 header{
     width: 98%;
     margin: 1%;
     padding: 0.5% 8%;
     overflow: auto;
-    background-color: aqua;
+    position: sticky;
+    top: 2%;
+    border-radius: 15px;
+    background-color: var(--main);
 }
 nav{
     display: block;
     float: left;
     padding: 1%;
-    background-color: red;
 }
 nav ul li{
     display: inline;
     margin: 0 8px;
-    background-color: rgb(0, 255, 170);
 }
-.ul-nav{
-    background-color: yellow;
-    display: block;
+.li-nav a {
+    position: relative;
+}
+
+.li-nav a span:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+    background-color: var(--text);
+}
+
+.li-nav a:hover span:after {
+    width: 100%;
+}
+a{
+    color: var(--text);
 }
 .logo{
     width: 40px;
     float: right;
     margin: 0.50% 0;
-    background-color: green;
+    cursor: pointer;
 }
 main{
     padding: 0.5% 1%;
     text-align: center;
-    background-color: rgb(178, 30, 0);
 }
 .text-main{
     margin: 0.4% 0;
+    letter-spacing: 1px;
     font-family: 'Cormorant', serif;
-    background-color: antiquewhite;
 }
 
 /*_____________________________ home content _____________________________*/
 .content-Home{
     padding: 1px;
-    background-color: rgb(125, 80, 45);
 }
 .banner{
     width: 100%;
@@ -78,9 +102,7 @@ main{
 }
 .div-container-home{
     overflow: auto;
-    margin: 1%;
-    padding: 1% 24%;
-    background-color: beige;
+    padding: 2% 24%;
 }
 .introduction-home{
     float: left;
@@ -95,30 +117,35 @@ main{
 }
 .content-about{
     padding: 1px 24%;
-    background-color: rgb(181, 240, 221);
 }
 .tarjeta{
     width: 100%;
     margin: 1.5% 0;
     padding: 1%;
     overflow: auto;
-    background-color: rgb(118, 118, 255);
+    background:
+      radial-gradient(100% 100% at 100% 100%, #0000 46%,rgba(106, 143, 127, 0.03) 47% 53%,#0000 54%) 52px 52px,
+      radial-gradient(100% 100% at 0 0, #0000 46%,rgba(106, 143, 127, 0.03) 47% 53%,#0000 54%) 52px 52px,
+      radial-gradient(100% 100%, #0000 22%, rgba(106, 143, 127, 0.03) 23% 29%, #0000 30% 34%, rgba(106, 143, 127, 0.03) 35% 41%, #0000 42%)
+      rgba(163, 194, 177, 0.28);
+background-size: 104px 104px;
+    border-radius: 20px;
 }
 .image-tarjeta{
-    height: 400px;
+    height: 350px;
     float: left;
     object-fit: cover;
 }
 .paragraph-tarjeta{
     float: right;
-    margin: 14% 7%;
+    margin: 12% 7%;
     padding: 0 9%;
 }
+
 /*_____________________________ contact section _____________________________*/
 .contact-content{
     padding: 1%;
     text-align: center;
-    background-color: rgb(189, 143, 105);
 }
 .image-5{
     width: 65%;
@@ -126,19 +153,19 @@ main{
     object-fit: cover;
 }
 .text-contact{
-    padding: 2%;
-    background-color: aqua;
+    width: 40%;
+    margin: 2% 30%;
 }
 .container-comunicacion{
     padding: 1px 25%;
     overflow: auto;
-    background-color: rgb(248, 205, 154);
 }
 .comuncacion{
     width: 25%;
     margin: 1%;
-    padding: 0.5% 1%;
-    background-color: red;
+    padding: 1% 1.4%;
+    border-radius: 10px;
+    background-color: var(--second);
 }
 .com-mail{
     float: left;
@@ -147,10 +174,11 @@ main{
     float: right;
 }
 footer{
-    padding: 1%;
+    padding: 1.5% 1%;
     text-align: center;
-    background-color: rgb(182, 182, 255);
+    background-color: var(--main);
 }
 .paragraph-footer{
-    background-color: rgb(255, 156, 36);
+    font-size: 14px;
+    color: #57575797;
 }
