@@ -86,7 +86,9 @@ main{
     letter-spacing: 1px;
     font-family: 'Cormorant', serif;
 }
-
+.title{
+    display: none;
+}
 /*_____________________________ home content _____________________________*/
 .content-Home{
     padding: 1px;
