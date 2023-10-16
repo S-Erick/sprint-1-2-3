@@ -45,3 +45,11 @@ main{
     margin: 0.4% 0;
     background-color: antiquewhite;
 }
+footer{
+    padding: 1%;
+    text-align: center;
+    background-color: rgb(182, 182, 255);
+}
+.paragraph-footer{
+    background-color: rgb(255, 156, 36);
+}
