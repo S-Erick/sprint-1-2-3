@@ -15,7 +15,7 @@
     --text: #000000;
 }
 body{
-    width: calc(100% - 10px);
+    width: calc(100% - 0px);
     background-color: var(--background);
 }
 
@@ -183,4 +183,18 @@ footer{
 .paragraph-footer{
     font-size: 14px;
     color: #57575797;
+}
+/*_____________________________ scrollbar _____________________________*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #cce3de44;
+}
+::-webkit-scrollbar-thumb {
+    background: #a4c3b29d;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6b90809d;
 }
