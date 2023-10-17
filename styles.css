@@ -21,7 +21,7 @@ body{
 
 /*_____________________________ general settings _____________________________*/
 .global-paragraph{
-    width: 500px;
+    width: 25vw;
     font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
@@ -34,26 +34,28 @@ body{
 header{
     width: 98%;
     margin: 1%;
-    padding: 0.5% 8%;
-    overflow: auto;
+    padding: 1% 11%;
     position: sticky;
     top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 15px;
     background-color: var(--main);
 }
 nav{
-    display: block;
-    float: left;
-    padding: 1%;
+    padding: 0.5%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
 }
 nav ul li{
-    display: inline;
     margin: 0 8px;
 }
 .li-nav a {
     position: relative;
 }
-
 .li-nav a span:after {
     content: "";
     position: absolute;
@@ -73,9 +75,12 @@ a{
 }
 .logo{
     width: 40px;
-    float: right;
-    margin: 0.50% 0;
     cursor: pointer;
+}
+.a-logo{
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 main{
     padding: 0.5% 1%;
@@ -85,6 +90,15 @@ main{
     margin: 0.4% 0;
     letter-spacing: 1px;
     font-family: 'Cormorant', serif;
+}
+footer{
+    padding: 1.5% 1%;
+    text-align: center;
+    background-color: var(--main);
+}
+.paragraph-footer{
+    font-size: 14px;
+    color: #57575797;
 }
 /*________________________________ title _______________________________ */
 .title{
@@ -104,18 +118,16 @@ main{
     background-attachment: fixed;
 }
 .div-container-home{
-    overflow: auto;
     padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .introduction-home{
-    float: left;
-    width: 28%;
-    margin: 10% 0 10% 25%;
+    margin: 2%;
 }
 .image-1{
-    width: 18%;
-    float: right;
-    margin: 3% 25% 3% 0;
+    margin: 2%;
 }
 
 /*_____________________________ about content _____________________________ */
@@ -126,7 +138,9 @@ main{
     width: 100%;
     margin: 1.5% 0;
     padding: 1%;
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
         background:
           radial-gradient(100% 100% at 100% 100%, #0000 46%,rgba(106, 143, 127, 0.03) 47% 53%,#0000 54%) 52px 52px,
           radial-gradient(100% 100% at 0 0, #0000 46%,rgba(106, 143, 127, 0.03) 47% 53%,#0000 54%) 52px 52px,
@@ -137,20 +151,19 @@ main{
 }
 .image-tarjeta{
     height: 350px;
-    float: left;
     object-fit: cover;
 }
 .paragraph-tarjeta{
-    float: right;
-    width: 50%;
-    margin: 12% 1%;
-    padding: 0 9%;
+    margin: 8%;
 }
 
 /*_____________________________ contact section _____________________________*/
 .contact-content{
     padding: 1%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .image-5{
     width: 65%;
@@ -162,30 +175,24 @@ main{
     margin: 2% 30%;
 }
 .container-comunicacion{
+    width: 100%;
     padding: 1px 25%;
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
 }
 .comuncacion{
-    width: 25%;
+    width: 230px;
     margin: 1%;
     padding: 1% 1.4%;
     border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
     background-color: var(--second);
 }
 .com-mail{
-    float: left;
 }
 .com-numb{
-    float: right;
-}
-footer{
-    padding: 1.5% 1%;
-    text-align: center;
-    background-color: var(--main);
-}
-.paragraph-footer{
-    font-size: 14px;
-    color: #57575797;
 }
 /*_____________________________ scrollbar _____________________________*/
 ::-webkit-scrollbar {
