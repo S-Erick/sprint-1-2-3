@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap');
-*{
+*:not(ol){
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -157,6 +157,8 @@ background-size: 64px 64px;
     border-radius: 20px;
 }
 .image-tarjeta{
+    width: 300px;
+    border-radius: 15px;
     height: 350px;
     object-fit: cover;
 }
@@ -233,8 +235,39 @@ background-size: 64px 64px;
 
 
 }
-/*_____________________________ reting content _____________________________ */
-
+/*_____________________________ rating content _____________________________ */
+.rating-content{
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta-rating{
+    width: 40vw;
+    display: flex;
+    margin: 0.5%;
+    border-radius: 15px;
+    background:
+    radial-gradient(100% 100% at 100% 100%, #0000 46%,rgba(163, 194, 177, 0.09) 47% 53%,#0000 54%) 32px 32px,
+    radial-gradient(100% 100% at 0 0, #0000 46%,rgba(163, 194, 177, 0.09) 47% 53%,#0000 54%) 32px 32px,
+    radial-gradient(100% 100%, #0000 22%, rgba(163, 194, 177, 0.09) 23% 29%, #0000 30% 34%, rgba(163, 194, 177, 0.09) 35% 41%, #0000 42%)
+    rgba(204, 227, 222, 0.63);
+background-size: 64px 64px;
+}
+.tarjeta-content-rating{
+    width: 70%;
+    padding: 4% 12% 1% 12%;
+}
+.img-tarjeta-reting{
+    width: 35%;
+    height: 35%;
+}
+.rating-rating{
+    width: 40%;
+}
+.texto-rating{
+    margin: 1% 0;
+}
 /*_____________________________ scrollbar _____________________________*/
 ::-webkit-scrollbar {
     width: 8px;
