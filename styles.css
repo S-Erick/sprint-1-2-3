@@ -13,6 +13,7 @@
     --main: #eaf4f4e3;
     --second: #CCE3DE;
     --text: #000000;
+    --secondary-text:#57575797;
 }
 body{
     width: calc(100% - 0px);
@@ -103,7 +104,7 @@ footer{
 }
 .paragraph-footer{
     font-size: 14px;
-    color: #57575797;
+    color: var(--secondary-text);
 }
 /*________________________________ title _______________________________ */
 .title{
@@ -206,21 +207,11 @@ background-size: 64px 64px;
     align-items: center;
     justify-content: center;
 }
-.table{
-    width: 36.3vw;
-    height: 51.1vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 .boxes{
     width: 12vw;
     height: 10vh;
     margin: 1px;
     border-radius: 5PX;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     background:
     radial-gradient(100% 100% at 100% 100%, #0000 46%,rgba(163, 194, 177, 0.09) 47% 53%,#0000 54%) 32px 32px,
@@ -228,9 +219,8 @@ background-size: 64px 64px;
     radial-gradient(100% 100%, #0000 22%, rgba(163, 194, 177, 0.09) 23% 29%, #0000 30% 34%, rgba(163, 194, 177, 0.09) 35% 41%, #0000 42%)
     rgba(204, 227, 222, 0.63);
 background-size: 64px 64px;
-
-
 }
+
 /*_____________________________ rating content _____________________________ */
 .rating-content{
     padding: 1px;
@@ -252,7 +242,7 @@ background-size: 64px 64px;
 }
 .tarjeta-content-rating{
     width: 70%;
-    padding: 4% 12% 1% 12%;
+    padding: 4% 12% 1% 8%;
 }
 .img-tarjeta-reting{
     width: 35%;
@@ -263,6 +253,14 @@ background-size: 64px 64px;
 }
 .texto-rating{
     margin: 1% 0;
+}
+ol li{
+    font-size: 15px;
+}
+.list-span{
+    font-size: 13px;
+    margin: 8px;
+    color: var(--secondary-text);
 }
 /*_____________________________ scrollbar _____________________________*/
 ::-webkit-scrollbar {
