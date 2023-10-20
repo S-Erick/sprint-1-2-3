@@ -19,10 +19,11 @@ body{
     width: calc(100% - 0px);
     background-color: var(--background);
 }
-
+/* "gap" separacion de elementos con el mismo espaciado */
 /*_____________________________ general settings _____________________________*/
 .global-paragraph{
     width: 25vw;
+    min-width: 300px;
     font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
@@ -126,6 +127,7 @@ footer{
 .div-container-home{
     padding: 2%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -138,13 +140,19 @@ footer{
 
 /*_____________________________ about content _____________________________ */
 .content-about{
-    padding: 1px 24%;
+    padding: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .tarjeta{
-    width: 100%;
-    margin: 1.5% 0;
-    padding: 1%;
+    width: 55rem;
+    min-width: 320px;
+    margin: 0.5% 5%;
+    padding: 0.8%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background:
@@ -164,7 +172,8 @@ background-size: 64px 64px;
     object-fit: cover;
 }
 .paragraph-tarjeta{
-    margin: 8%;
+    width: 30rem;
+    margin: 2rem;
 }
 
 /*_____________________________ contact section _____________________________*/
@@ -180,15 +189,15 @@ background-size: 64px 64px;
     height: 65vh;
     object-fit: cover;
 }
-.text-contact{
-    width: 40%;
-    margin: 4% 0 3% 0;
-}
 .container-comunicacion{
     width: 100%;
     padding: 1px 25%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+.text-contact{
+    margin: 3%;
 }
 .comuncacion{
     width: 230px;
@@ -203,12 +212,14 @@ background-size: 64px 64px;
 /*_____________________________ services content _____________________________ */
 .table-section{
     padding: 3% 0 5% 0;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .boxes{
     width: 12vw;
+    min-width: 150px;
     height: 10vh;
     margin: 1px;
     border-radius: 5PX;
@@ -230,9 +241,14 @@ background-size: 64px 64px;
 }
 .tarjeta-rating{
     width: 40vw;
+    min-width: 350px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 0.5%;
     border-radius: 15px;
+    overflow: auto;
     background:
     radial-gradient(100% 100% at 100% 100%, #0000 46%,rgba(163, 194, 177, 0.09) 47% 53%,#0000 54%) 32px 32px,
     radial-gradient(100% 100% at 0 0, #0000 46%,rgba(163, 194, 177, 0.09) 47% 53%,#0000 54%) 32px 32px,
@@ -241,18 +257,20 @@ background-size: 64px 64px;
 background-size: 64px 64px;
 }
 .tarjeta-content-rating{
-    width: 70%;
-    padding: 4% 12% 1% 8%;
+    width: 45%;
+    min-width: 330px;
+    padding: 2%
 }
 .img-tarjeta-reting{
     width: 35%;
+    min-width: 250px;
     height: 35%;
 }
 .rating-rating{
     width: 40%;
 }
 .texto-rating{
-    margin: 1% 0;
+    margin: 3% 0;
 }
 ol li{
     font-size: 15px;
@@ -261,6 +279,114 @@ ol li{
     font-size: 13px;
     margin: 8px;
     color: var(--secondary-text);
+}
+/*_____________________________ hire section _____________________________*/
+.content-hire{
+    width: 100%;
+    height: 80vh;
+    padding: 0.4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div-container-hire{
+    width: 30%;
+    min-width: 350px;
+    height: 35rem;
+    margin: 1.4% 8%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    border-radius: 15px;
+    background:
+    radial-gradient(100% 100% at 100% 100%, #0000 46%,rgba(163, 194, 177, 0.09) 47% 53%,#0000 54%) 32px 32px,
+    radial-gradient(100% 100% at 0 0, #0000 46%,rgba(163, 194, 177, 0.09) 47% 53%,#0000 54%) 32px 32px,
+    radial-gradient(100% 100%, #0000 22%, rgba(163, 194, 177, 0.09) 23% 29%, #0000 30% 34%, rgba(163, 194, 177, 0.09) 35% 41%, #0000 42%)
+    rgba(204, 227, 222, 0.63);
+background-size: 64px 64px;
+}
+.title-map{
+    margin: 0 0 5% 0;
+    font-weight: 400;
+}
+.map {
+    width: 100%; 
+    height: 450px; 
+    border: none; 
+    display: flex;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    width: 100%;
+    font-size: 14px;
+    margin: 1% 0;
+}
+input:not(#radio, #checkbox, #submit), textarea, select{
+    width: 97%;
+    height: 40px;
+    margin: 0 0 0 3%;
+    padding: 0 3%;
+    resize: none;
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffffa8;
+}
+fieldset{
+    width: 100%;
+    height: 64px;
+    margin: 1% 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.fieldset-radio{
+    height: 110px;
+    border: 2px solid #ffffff3d;
+}
+#radio{
+    margin: 0 1% 0 3%;
+}
+.fieldset-terms{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#checkbox{
+    margin: 0 0 0 5%;
+}
+#terms {
+    font-size: 12px;
+    margin: 0 30% 0 0;
+}
+#submit{
+    margin: 0 5% 0 0;
+    padding: 0.8% 3%;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: calc(0.4s);
+}
+#submit:hover{
+    transform: scale(1.05);
+    color: var(--background);
+    background-color: var(--secondary-text);
 }
 /*_____________________________ scrollbar _____________________________*/
 ::-webkit-scrollbar {
@@ -275,4 +401,132 @@ ol li{
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #6b90809d;
+}
+@media only screen and (max-width: 65rem) {
+/*_____________________________ general settings _____________________________*/
+    header{
+        flex-direction: column-reverse;
+    }
+    nav ul li{
+        font-size: 12.5px;
+    }
+    .global-paragraph{
+        font-size: 18px;
+    }
+    main{
+        padding: 3%;
+    }
+    .text-main{
+        font-size: 25px;
+    }
+/*_____________________________ home content _____________________________*/
+    .introduction-home{
+        margin: 6%;
+    }
+    .image-1{
+        margin: 6%;
+    }
+/*_____________________________ about content _____________________________ */
+    .tarjeta{
+        width: 10rem;
+        margin: 2% 10%;
+        padding: 1%;
+    }
+    .paragraph-tarjeta{
+        margin: 1%;
+    }
+/*_____________________________ contact section _____________________________*/
+    .container-comunicacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-contact{
+        margin: 6%;
+    }
+/*_____________________________ hire section _____________________________*/
+    .content-hire{
+        width: 100%;
+        height: 100%;
+}
+@media only screen and (max-width: 30rem) {
+/*_____________________________ general settings _____________________________*/
+    header{
+        flex-direction: column-reverse;
+    }
+    main{
+        padding: 5%;
+    }
+    .text-main{
+        font-size: 20px;
+    }
+    .global-paragraph{
+        font-size: 15px;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        margin: 1% 8px;
+    }
+/*_____________________________ home content _____________________________*/
+    .introduction-home{
+        margin: 10%;
+    }
+    .image-1{
+        margin: 10%;
+    }
+/*_____________________________ about content _____________________________ */
+    .tarjeta{
+        margin: 2% 0;
+        padding: 3%;
+    }
+    .paragraph-tarjeta{
+        margin: 1%;
+    }
+/*_____________________________ contact section _____________________________*/
+    .comuncacion{
+        font-size: 13px;
+        padding: 5%;
+        margin: 3%;
+    }
+    .text-contact{
+        margin: 10%;
+    }
+/*_____________________________ services content _____________________________ */
+    .table-section{
+        height: 73.7vh;
+    }
+    .boxes{
+        min-width: 115px;
+        height: 10vh;
+        font-size: 12px;
+    }
+/*_____________________________ rating content _____________________________ */
+    .rating-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tarjeta-rating{
+        margin: 3%;
+    }
+    .texto-rating{
+        margin: 5%;
+        font-size: 13px;
+        text-align: center;
+    }
+/*_____________________________ hire section _____________________________*/
+    .div-container-hire{
+        height: 30rem;
+        margin: 5%;
+        padding: 5%;
+    }
+    #terms {
+        font-size: 11px;
+        margin: 0 10% 0 0;
+    }
 }

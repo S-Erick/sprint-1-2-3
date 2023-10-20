@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hire</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="ul-nav">
+                <li class="li-nav"><a href="index.html"><span>Home</span></a></li>
+                <li class="li-nav"><a href="about.html"><span>About Us</span></a></li>
+                <li class="li-nav"><a href="contact.html"><span>Contact</span></a></li>
+                <li class="li-nav"><a href="services.html"><span>Services</span></a></li>
+                <li class="li-nav"><a href="rating.html"><span>Rating</span></a></li>
+                <li class="li-nav"><a href="hire.html"><span>Hire</span></a></li>
+            </ul>
+        </nav>
+        <a class="a-logo" href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+    </header>
+    <main>
+        <h1 class="text-main">Rating</h1>
+        <h2 class="text-main">Welcome to rating and reviews</h2>
+    </main>
+    <section class="content-hire">
+        <div class="div-container-hire">
+            <h3 class="title-map">Our location</h3>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0532485695!2d-118.74206034629164!3d34.020606634681926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1697751731526!5m2!1ses-419!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"r:0;" ></iframe>
+        </div>
+        <div class="div-container-hire">
+            <form action="show_data.html" method="get">
+                <label for="">First Name and Last Name<input id="--" type="text"></label>
+                <label for="">Phone Number<input id="--" type="number"></label>
+                <label for="">Choose Service
+                    <select name="sevices" id="sevices">
+                        <option value="select-Wedding">Wedding</option>
+                        <option value="select-Birthday">Birthday</option>
+                        <option value="select-Kids Birthday">Kids Birthday</option>
+                        <option value="select-Photos Studio / Outside">Photos Studio / Outside</option>
+                    </select>
+                </label>
+                <label for="">Choose Data<input id="--" type="date"></label>
+                <fieldset class="fieldset-radio">
+                    <legend>Payment Options</legend>
+                    <label for="radio"><input id="radio" type="radio">Cash</label>
+                    <label for="radio"><input id="radio" type="radio">Creit card</label>
+                    <label for="radio"><input id="radio" type="radio">Debit card</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Messages (Location and Time)</legend>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                <div class="fieldset-terms">
+                    <input id="checkbox" type="checkbox">
+                    <p     id="terms"    >I accept terms and conditions...</p>
+                    <input id="submit"   type="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p class="paragraph-footer">
+            Created by: Erick Sepulveda © 2023 MidHub.
+        </p>
+    </footer>
+</body>
+</html>
