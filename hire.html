@@ -26,15 +26,16 @@
         <h2 class="text-main">Welcome to rating and reviews</h2>
     </main>
     <section class="content-hire">
+        <h2 class="title">content-hire</h2>
         <div class="div-container-hire">
             <h3 class="title-map">Our location</h3>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0532485695!2d-118.74206034629164!3d34.020606634681926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1697751731526!5m2!1ses-419!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"r:0;" ></iframe>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0532485695!2d-118.74206034629164!3d34.020606634681926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1697751731526!5m2!1ses-419!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="div-container-hire">
+        <div class="div-container-hire div-container-hire-left">
             <form action="show_data.html" method="get">
-                <label for="">First Name and Last Name<input id="--" type="text"></label>
-                <label for="">Phone Number<input id="--" type="number"></label>
-                <label for="">Choose Service
+                <label for="name">First Name and Last Name<input id="name" type="text"></label>
+                <label for="phone-number">Phone Number<input id="phone-number" type="number"></label>
+                <label for="sevices">Choose Service
                     <select name="sevices" id="sevices">
                         <option value="select-Wedding">Wedding</option>
                         <option value="select-Birthday">Birthday</option>
@@ -42,21 +43,21 @@
                         <option value="select-Photos Studio / Outside">Photos Studio / Outside</option>
                     </select>
                 </label>
-                <label for="">Choose Data<input id="--" type="date"></label>
+                <label for="date">Choose Data<input id="date" type="date"></label>
                 <fieldset class="fieldset-radio">
                     <legend>Payment Options</legend>
-                    <label for="radio"><input id="radio" type="radio">Cash</label>
-                    <label for="radio"><input id="radio" type="radio">Creit card</label>
-                    <label for="radio"><input id="radio" type="radio">Debit card</label>
+                    <label for="Cash"><input id="Cash" type="radio">Cash</label>
+                    <label for="Creit-card"><input id="Creit-card" type="radio">Creit card</label>
+                    <label for="Debit-card"><input id="Debit-card" type="radio">Debit card</label>
                 </fieldset>
                 <fieldset>
                     <legend>Messages (Location and Time)</legend>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
                 </fieldset>
                 <div class="fieldset-terms">
                     <input id="checkbox" type="checkbox">
-                    <p     id="terms"    >I accept terms and conditions...</p>
-                    <input id="submit"   type="submit">
+                    <p id="terms">I accept terms and conditions...</p>
+                    <input id="submit" type="submit">
                 </div>
             </form>
         </div>
